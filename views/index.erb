@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href=<%= url("/stylesheet.css")%> >
+	</head>
+	<body>
+		<div class="container">
+			<div class="center">
+				<h1>
+					The Caesar Cipher
+				</h1>
+				<form method="post">
+					<input type="text" name="message"/>
+					<input type="number" name="key" />
+					<input class="submit" type="submit" value="Cipher" />
+				</form>
+			</div>
+		</div>
+		<% if defined? cipher %>
+			<%= "<p class='cipher'>" +
+				cipher.to_s +
+			"</p>" %>
+		<% end %>
+	</body>
+</html>
