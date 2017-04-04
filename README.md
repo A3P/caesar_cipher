@@ -1,4 +1,4 @@
-##Caesar Cipher##
+### Caesar Cipher
 
 Try it out [here!](https://secret-beyond-72756.herokuapp.com)
 
